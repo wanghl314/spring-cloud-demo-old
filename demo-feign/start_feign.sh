@@ -23,7 +23,7 @@ if [ "${SUCCESS}"x != "0"x ]; then
     exit 1
 fi
 
-# start feign service
+echo "start feign service"
 cd "${CURRENT_DIR}"
 nohup java -jar target/demo-feign-1.0-SNAPSHOT.jar > nohup.out 2>&1 &
 

@@ -22,23 +22,23 @@ if [ "${SUCCESS}"x != "0"x ]; then
     exit 1
 fi
 
-# start eureka service
+echo "start eureka service"
 cd "${CURRENT_DIR}/demo-eureka"
 nohup java -jar target/demo-eureka-1.0-SNAPSHOT.jar > nohup.out 2>&1 &
 
-# start log service
+echo "start log service"
 cd "${CURRENT_DIR}/demo-log"
 nohup java -jar target/demo-log-1.0-SNAPSHOT.jar > nohup.out 2>&1 &
 
-# start user service
+echo "start user service"
 cd "${CURRENT_DIR}/demo-user"
 nohup java -jar target/demo-user-1.0-SNAPSHOT.jar > nohup.out 2>&1 &
 
-# start compound service
+echo "start compound service"
 cd "${CURRENT_DIR}/demo-compound"
 nohup java -jar target/demo-compound-1.0-SNAPSHOT.jar > nohup.out 2>&1 &
 
-# start feign service
+echo "start feign service"
 cd "${CURRENT_DIR}/demo-feign"
 nohup java -jar target/demo-feign-1.0-SNAPSHOT.jar > nohup.out 2>&1 &
 

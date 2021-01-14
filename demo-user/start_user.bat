@@ -13,7 +13,7 @@ goto packageFailed
 goto end
 
 :startUserService
-rem start user service
+echo start user service
 cd /d "%CURRENT_DIR%"
 start cmd /k java -jar "%CURRENT_DIR%\target\demo-user-1.0-SNAPSHOT.jar"
 goto end

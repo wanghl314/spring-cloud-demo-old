@@ -23,7 +23,7 @@ if [ "${SUCCESS}"x != "0"x ]; then
     exit 1
 fi
 
-# start user service
+echo "start user service"
 cd "${CURRENT_DIR}"
 nohup java -jar target/demo-user-1.0-SNAPSHOT.jar > nohup.out 2>&1 &
 

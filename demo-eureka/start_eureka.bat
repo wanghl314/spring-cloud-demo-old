@@ -13,7 +13,7 @@ goto packageFailed
 goto end
 
 :startEurekaService
-rem start eureka service
+echo start eureka service
 cd /d "%CURRENT_DIR%"
 start cmd /k java -jar "%CURRENT_DIR%\target\demo-eureka-1.0-SNAPSHOT.jar"
 goto end

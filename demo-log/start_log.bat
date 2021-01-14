@@ -13,7 +13,7 @@ goto packageFailed
 goto end
 
 :startLogService
-rem start log service
+echo start log service
 cd /d "%CURRENT_DIR%"
 start cmd /k java -jar "%CURRENT_DIR%\target\demo-log-1.0-SNAPSHOT.jar"
 goto end

@@ -23,7 +23,7 @@ if [ "${SUCCESS}"x != "0"x ]; then
     exit 1
 fi
 
-# start compound service
+echo "start compound service"
 cd "${CURRENT_DIR}"
 nohup java -jar target/demo-compound-1.0-SNAPSHOT.jar > nohup.out 2>&1 &
 

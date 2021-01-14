@@ -23,7 +23,7 @@ if [ "${SUCCESS}"x != "0"x ]; then
     exit 1
 fi
 
-# start boot service
+echo "start boot service"
 cd "${CURRENT_DIR}"
 nohup java -jar target/demo-boot-1.0-SNAPSHOT.jar > nohup.out 2>&1 &
 

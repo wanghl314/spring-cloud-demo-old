@@ -13,7 +13,7 @@ goto packageFailed
 goto end
 
 :startBootService
-rem start boot service
+echo start boot service
 cd /d "%CURRENT_DIR%"
 start cmd /k java -jar target\demo-boot-1.0-SNAPSHOT.jar
 goto end

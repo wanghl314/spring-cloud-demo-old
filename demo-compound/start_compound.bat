@@ -13,7 +13,7 @@ goto packageFailed
 goto end
 
 :startCompoundService
-rem start compound service
+echo start compound service
 cd /d "%CURRENT_DIR%"
 start cmd /k java -jar "%CURRENT_DIR%\target\demo-compound-1.0-SNAPSHOT.jar"
 goto end

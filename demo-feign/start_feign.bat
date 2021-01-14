@@ -13,7 +13,7 @@ goto packageFailed
 goto end
 
 :startFeignService
-rem start feign service
+echo start feign service
 cd /d "%CURRENT_DIR%"
 start cmd /k java -jar "%CURRENT_DIR%\target\demo-feign-1.0-SNAPSHOT.jar"
 goto end

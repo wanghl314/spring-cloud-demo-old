@@ -23,7 +23,7 @@ if [ "${SUCCESS}"x != "0"x ]; then
     exit 1
 fi
 
-# start log service
+echo "start log service"
 cd "${CURRENT_DIR}"
 nohup java -jar target/demo-log-1.0-SNAPSHOT.jar > nohup.out 2>&1 &
 

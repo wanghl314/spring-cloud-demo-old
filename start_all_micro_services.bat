@@ -12,23 +12,23 @@ goto packageFailed
 goto end
 
 :startAllMicroServices
-rem start eureka service
+echo start eureka service
 cd /d "%CURRENT_DIR%\demo-eureka"
 start cmd /k java -jar target\demo-eureka-1.0-SNAPSHOT.jar
 
-rem start log service
+echo start log service
 cd /d "%CURRENT_DIR%\demo-log"
 start cmd /k java -jar target\demo-log-1.0-SNAPSHOT.jar"
 
-rem start user service
+echo start user service
 cd /d "%CURRENT_DIR%\demo-user"
 start cmd /k java -jar target\demo-user-1.0-SNAPSHOT.jar"
 
-rem start compound service
+echo start compound service
 cd /d "%CURRENT_DIR%\demo-compound"
 start cmd /k java -jar target\demo-compound-1.0-SNAPSHOT.jar"
 
-rem start feign service
+echo start feign service
 cd /d "%CURRENT_DIR%\demo-feign"
 start cmd /k java -jar target\demo-feign-1.0-SNAPSHOT.jar"
 
