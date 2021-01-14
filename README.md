@@ -4,7 +4,7 @@ spring-cloud-2020.0.0+spring-cloud-alibaba-2.2.3.RELEASE
 
 eureka+feign+dubbo
 
-要求开发环境已配置好JAVA和MAVEN环境变量
+要求开发环境已配置好Java和Maven环境变量
 
 ### 1. 一键编译并启动所有微服务（服务之前通过dubbo远程调用）  
 
