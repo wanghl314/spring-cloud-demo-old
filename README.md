@@ -8,9 +8,12 @@ eureka+feign+dubbo
 
 一键编译并启动所有微服务（服务之前通过dubbo远程调用）  
 
-Windows：/start_all_micro_services.bat
+Windows：/start_all_micro_services.bat  
+
 Linux：/start_all_micro_services.sh
 
-一键编译并将所有模块打包为一个服务启动（模块之间通过dubbo injvm方式调用）
-Windows：/demo-boot/start_all_in_one.bat
+一键编译并将所有模块打包为一个服务启动（模块之间通过dubbo injvm方式调用）  
+
+Windows：/demo-boot/start_all_in_one.bat  
+
 Linux：/demo-boot/start_all_in_one.sh
