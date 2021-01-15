@@ -14,7 +14,7 @@ PRGDIR=`dirname "$PRG"`
 CURRENT_DIR=`cd "$PRGDIR">/dev/null; pwd`
 
 # 打包
-mvn clean package -DskipTests=true -pl com.whl.demo:demo-eureka,com.whl.demo:demo-feign,com.whl.demo:demo-log,com.whl.demo:demo-user,com.whl.demo:demo-compound -am -U
+mvn clean package -DskipTests=true -pl com.whl.demo:demo-eureka,com.whl.demo:demo-feign,com.whl.demo:demo-log,com.whl.demo:demo-token,com.whl.demo:demo-user,com.whl.demo:demo-compound -am -U
 
 SUCCESS=$?
 
@@ -33,6 +33,10 @@ nohup java -jar target/demo-log-1.0-SNAPSHOT.jar > nohup.out 2>&1 &
 echo "start user service"
 cd "${CURRENT_DIR}/demo-user"
 nohup java -jar target/demo-user-1.0-SNAPSHOT.jar > nohup.out 2>&1 &
+
+echo "start token service"
+cd "${CURRENT_DIR}/demo-token"
+nohup java -jar target/demo-token-1.0-SNAPSHOT.jar > nohup.out 2>&1 &
 
 echo "start compound service"
 cd "${CURRENT_DIR}/demo-compound"

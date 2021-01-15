@@ -34,4 +34,9 @@ public class CompoundController {
         return "feign: " + this.compoundService.userTest();
     }
 
+    @GetMapping("/token/test")
+    public String tokenTest() throws Exception {
+        return "feign: " + this.compoundService.tokenTest();
+    }
+
 }

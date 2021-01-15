@@ -36,6 +36,11 @@
         </dependency>
         <dependency>
             <groupId>com.whl.demo</groupId>
+            <artifactId>demo-token</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.whl.demo</groupId>
             <artifactId>demo-user</artifactId>
             <version>${project.version}</version>
         </dependency>

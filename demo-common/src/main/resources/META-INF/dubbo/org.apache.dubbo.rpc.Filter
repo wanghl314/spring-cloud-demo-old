@@ -1,0 +1,2 @@
+tokenTransfer=com.whl.demo.common.dubbo.filter.TokenTransferFilter
+tokenVerify=com.whl.demo.common.dubbo.filter.TokenVerifyFilter
