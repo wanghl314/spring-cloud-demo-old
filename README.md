@@ -6,7 +6,7 @@ eureka+feign+dubbo
 
 要求开发环境已配置好Java和Maven环境变量
 
-### 1. 一键编译并启动所有微服务（服务之前通过dubbo远程调用）  
+### 1. 一键编译并启动所有微服务（服务之间通过dubbo远程调用）  
 
 Windows：/start_all_micro_services.bat  
 
