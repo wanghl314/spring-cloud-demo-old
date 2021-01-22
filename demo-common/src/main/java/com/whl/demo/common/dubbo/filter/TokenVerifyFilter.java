@@ -18,7 +18,7 @@ public class TokenVerifyFilter implements Filter, EnvironmentAware {
 
     @Override
     public Result invoke(Invoker<?> invoker, Invocation invocation) throws RpcException {
-        String tokenVerifyEnabled = this.environment.getProperty("dubbo.token.verify.enabled");
+        String tokenVerifyEnabled = this.environment.getProperty("dubbo.token.verify.global.enabled");
 
         if ("true".equalsIgnoreCase(tokenVerifyEnabled)) {
             String tokenVerifyBasePackages = this.environment.getProperty("dubbo.token.verify.base-packages");
