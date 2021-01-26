@@ -14,6 +14,11 @@ public class LogServiceImpl implements LogService {
     }
 
     @Override
+    public String testFallback() throws Exception {
+        return "LogServiceImpl testFallback";
+    }
+
+    @Override
     public String testPost(PostVo post) throws Exception {
         return "LogServiceImpl [content=" + post.getContent() + ", datetime=" + post.getDatetime() + "]";
     }

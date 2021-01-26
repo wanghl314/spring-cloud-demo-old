@@ -33,6 +33,12 @@ public class CompoundController {
         return "CompoundController: test";
     }
 
+    @GetMapping("/testFallback")
+    public String testFallback() {
+        int i = 1 / 0;
+        return "CompoundController: testFallback";
+    }
+
     @GetMapping("/log/test")
     public String logTest() throws Exception {
         return "CompoundController: " + this.logService.test();

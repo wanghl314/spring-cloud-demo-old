@@ -30,6 +30,7 @@
         <spring-cloud.version>2020.0.0</spring-cloud.version>
         <!-- com/alibaba/cloud/spring-cloud-alibaba-dependencies -->
         <spring-cloud-alibaba.version>2.2.3.RELEASE</spring-cloud-alibaba.version>
+        <spring-cloud-netflix-hystrix.version>2.2.6.RELEASE</spring-cloud-netflix-hystrix.version>
     </properties>
 
     <!-- maven私服 -->
@@ -100,6 +101,11 @@
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+                <version>${spring-cloud-netflix-hystrix.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

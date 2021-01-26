@@ -26,6 +26,12 @@ public class LogController {
         return "LogController: " + this.logService.test();
     }
 
+    @GetMapping("/testFallback")
+    public String testFallback() {
+        int i = 1 / 0;
+        return "LogController: testFallback";
+    }
+
     @PostMapping("/testpost")
     public String testPost(@RequestBody PostVo post) throws Exception {
         return "LogController: " + this.logService.testPost(post);

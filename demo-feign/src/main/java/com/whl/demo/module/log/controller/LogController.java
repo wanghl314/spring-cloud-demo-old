@@ -26,6 +26,11 @@ public class LogController {
         return "feign: " + this.logService.test();
     }
 
+    @GetMapping("/testFallback")
+    public String testFallback() throws Exception {
+        return "feign: " + this.logService.testFallback();
+    }
+
     @PostMapping("/testpost")
     public String testPost(@RequestBody PostVo post) throws Exception {
         return "feign: " + this.logService.testPost(post);

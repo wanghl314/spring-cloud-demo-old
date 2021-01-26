@@ -24,6 +24,11 @@ public class CompoundController {
         return "feign: " + this.compoundService.test();
     }
 
+    @GetMapping("/testFallback")
+    public String testFallback() throws Exception {
+        return "feign: " + this.compoundService.testFallback();
+    }
+
     @GetMapping("/log/test")
     public String logTest() throws Exception {
         return "feign: " + this.compoundService.logTest();
